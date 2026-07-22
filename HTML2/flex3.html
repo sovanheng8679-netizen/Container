@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            background: blanchedalmond;
+        }
+
+        .container {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .form {
+            background: white;
+            padding: 40px;
+            width: 350px;
+            border-radius: 10px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, .15);
+        }
+
+        .text1 {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        .text2 {
+            color: gray;
+            margin-bottom: 25px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        input {
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+        }
+
+        .forgot {
+            text-align: start;
+            margin-bottom: 20px;
+        }
+
+        .forgot a {
+            text-decoration: none;
+            color: #007bff;
+        }
+
+        .button {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        button {
+            padding: 12px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:first-child {
+            background: #000;
+            color: white;
+        }
+
+        .google-btn {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            background: white;
+            border: 1px solid #ccc;
+        }
+
+        .google-btn img {
+            width: 20px;
+            height: 20px;
+        }
+
+        .below {
+            margin-top: 15px;
+            text-align: center;
+            font-size: 15px;
+        }
+
+        .below a {
+            text-decoration: none;
+            color: #007bff;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="form">
+
+            <h2 class="text1">Welcome back</h2>
+
+            <p class="text2">
+                Welcome back! Please enter your details.
+            </p>
+
+            <form>
+
+                <label for="email">Email</label>
+                <input id="email" type="email" placeholder="Enter your email">
+
+                <label for="password">Password</label>
+                <input id="password" type="password" placeholder="Password">
+
+                <div class="forgot">
+                    <a href="#">Forgot password?</a>
+                </div>
+
+            </form>
+
+            <div class="button">
+
+                <button>Login</button>
+
+                <button class="google-btn">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg" alt="Google">
+                    Sign in with Google
+                </button>
+
+            </div>
+
+            <div class="below">
+                <p>Don't have an account?
+                    <a href="#">Sign up for free</a>
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>

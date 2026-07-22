@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*Universal selector*/
+        *{
+            color: red;
+        }
+        /*element selector*/
+        h2{
+            background-color: blue
+            ;
+        }
+        /* class selector*/
+        .text{
+            font-size:50px;
+        }
+
+        /* id selector*/
+        #text-h4{
+            background-color: purple;
+        }
+        /* descendant selector*/
+        div p{
+            background-color: green;
+        }
+        /* group selector*/
+        p,h2,h3{
+            font-family:'Courier New', Courier, monospace;
+        }
+
+    </style>
+</head>
+<body>
+    <h2>Hello from h2</h2>
+    <h3>Hello from h3</h3>
+    <p class="text">Hello from p</p>
+    <span class="text"> Hello from span</span>
+    <h4 id="text-h4">Hello from h4</h4>
+
+    <div>
+        <p>Hello from div</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Furniture Store</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', sans-serif;
+        }
+
+        .section1 {
+            width: 100%;
+            min-height: 100vh;
+            background-color: gray;
+        }
+
+        .top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .top .right {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+        }
+
+        .middle {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .middle p {
+            font-size: 20px;
+        }
+
+        .middle button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 10px;
+            background-color: black;
+            color: white;
+            cursor: pointer;
+            font-size: 14px;
+            margin-top: 10px;
+        }
+
+        .middle .picture img {
+            width: 500px;
+            height: 500px;
+            border-radius: 10px;
+            object-fit: cover;
+            border: 1px solid white;
+        }
+
+        .section2 {
+            width: 100%;
+            padding: 40px 20px;
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .benefit {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            gap: 40px;
+        }
+
+        .Delivery,
+        .Quality,
+        .Price {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        /* Product Section */
+        .Product {
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .Product > div > p {
+            font-size: 24px;
+            font-weight: 600;
+            color: black;
+            margin-bottom: 20px;
+        }
+
+        .group-card {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .group-card .card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+            flex: 1;
+        }
+
+        .group-card .card img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+            border: 1px solid #ddd;
+        }
+
+        /* View All Button */
+        .Product .button {
+            margin-top: 30px;
+            margin-bottom: 20px;
+        }
+
+        .Product .button button {
+            padding: 12px 24px;
+            border-radius: 10px;
+            background-color: black;
+            color: white;
+            font-size: 15px;
+            border: none;
+            cursor: pointer;
+        }
+
+        /* Section 3 & Footer */
+        .section3 {
+            width: 100%;
+            padding: 40px 20px;
+            background-color: #f0f0f0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 40px;
+        }
+
+        .letter {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+            text-align: center;
+        }
+
+        .letter h3 {
+            font-size: 28px;
+        }
+
+        .letter p {
+            font-size: 16px;
+            color: #555;
+        }
+
+        .rub-container {
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .rub-1,
+        .rub-2,
+        .rub-3 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+            font-size: 16px;
+            font-weight: 600;
+            color: black;
+        }
+
+        .rub-1 img,
+        .rub-2 img,
+        .rub-3 img {
+            width: 250px;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        hr {
+            width: 100%;
+            border: 0.5px solid #ccc;
+        }
+
+        .Lowest {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 0;
+        }
+
+        /* Fixed Class Selectors (added missing dots) */
+        .icon {
+            display: flex;
+            gap: 15px;
+        }
+
+        .icon > i {
+            font-size: 24px;
+            cursor: pointer;
+        }
+
+        .last {
+            display: flex;
+            gap: 20px;
+        }
+
+        .last > p {
+            font-size: 14px;
+            font-weight: 500;
+            color: black;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="section1">
+        <div class="top">
+            <div class="left">
+                <h3>Furniture</h3>
+            </div>
+            <div class="right">
+                <p>About</p>
+                <p>Catalog</p>
+                <p>Contact</p>
+                <i class="fa-solid fa-bag-shopping"></i>
+            </div>
+        </div>
+        <div class="middle">
+            <div class="text">
+                <h2>Stunning & Modern Furniture</h2>
+                <p>Create your perfect space with our stylish and comfortable designs.</p>
+                <div>
+                    <button>Shop Now</button>
+                </div>
+            </div>
+            <div class="picture">
+                <img src="https://cdn11.bigcommerce.com/s-wgbxa2/images/stencil/1280x1280/products/217399/94840/12028595__22389.1747852537.jpg?c=2"
+                    alt="Furniture">
+            </div>
+        </div>
+        <div class="bottom"></div>
+    </div>
+
+    <div class="section2">
+        <div class="benefit">
+            <div class="Delivery">
+                <i class="fa-solid fa-truck"></i>
+                <h4>Free Delivery</h4>
+            </div>
+            <div class="Quality">
+                <i class="fa-solid fa-check"></i>
+                <h4>High Quality</h4>
+            </div>
+            <div class="Price">
+                <i class="fa-solid fa-tag"></i>
+                <h4>Best Price</h4>
+            </div>
+        </div>
+    </div>
+
+    <div class="Product">
+        <div>
+            <p>Popular Products</p>
+        </div>
+        <div class="group-card">
+            <div class="card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzkrsVhDTlLGo2svBECeB8kM4fOpXOmqXUIPDHQkGieyFD90OzYerVqQc&s=10"
+                    alt="Elegant Chair">
+                <p>Elegant Chair</p>
+            </div>
+            <div class="card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtldCW0-u0XqgPwAxGyCGlSsUbVNZIQnNemp_BP6ynSrPEfl8gWFPY73o&s=10"
+                    alt="Elegant Sofa">
+                <p>Elegant Sofa</p>
+            </div>
+            <div class="card">
+                <img src="https://www.idfdesign.com/images/luxury-classic-tables/fantasia-rectangular-table-classic-table-in-carved-wood-3.jpg"
+                    alt="Elegant Table">
+                <p>Elegant Table</p>
+            </div>
+            <div class="card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsvhAEMYNTcsWj6F3fUFI4vgnxO5jxbWnAjW_k-GXXTpgTKy5roCUHuOxP&s=10"
+                    alt="Elegant Lamp">
+                <p>Elegant Lamp</p>
+            </div>
+        </div>
+        
+        <!-- Fixed button tag wrapper -->
+        <div class="button">
+            <button>View All</button>
+        </div>
+        <hr>
+    </div>
+
+    <div class="section3">
+        <div class="letter">
+            <h3>Transform your living space</h3>
+            <p>Explore our collection and find the perfect pieces to elevate your interior</p>
+        </div>
+
+        <!-- Added container to align items side by side -->
+        <div class="rub-container">
+            <div class="rub-1">
+                <img src="https://ouchcart.com/cdn/shop/products/H2ff88fdb4ff04a499e186fc9cb464627a_2x_931e1671-9a4e-499a-9e66-685f544f7ea0.jpg?v=1721368927&width=900"
+                    alt="New Arrivals">
+                <p>New Arrivals</p>
+            </div>
+            <div class="rub-2">
+                <img src="https://assets.vogue.com/photos/67dd2aa9423f1e0521dbdcba/1:1/w_4371,h_4371,c_limit/Chango%20-%20Modern%20Hamptons%20Living%20Room%20Wide%20-%20courtesy%20of%20Sarah%20Elliott.jpg"
+                    alt="Minimalist Design">
+                <p>Minimalist Design</p>
+            </div>
+            <div class="rub-3">
+                <img src="https://scooms.com/cdn/shop/files/hungarian-gooose-down-pillows-on-stools-scooms-2048x2048.jpg?v=1758896750&width=1840"
+                    alt="Special Offer">
+                <p>Special Offer</p>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="Lowest">
+            <div class="icon">
+                <i class="fa-brands fa-square-instagram"></i>
+                <i class="fa-brands fa-square-facebook"></i>
+                <i class="fa-brands fa-square-twitter"></i>
+            </div>
+
+            <div class="last">
+                <p>Privacy Policy</p>
+                <p>Terms & Conditions</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

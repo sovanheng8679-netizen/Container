@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liverpool Navbar</title>
+    
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        body {
+            background: #f4f4f4;
+        }
+
+        /* Navbar */
+        .container {
+            width: 100%;
+            height: 90px;
+            background: #C8102E;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 40px;
+        }
+
+        /* Logo */
+        .first img {
+            width: 80px;
+            height: 85px;
+            border-radius: 50%;
+            object-fit: cover;
+
+
+        }
+
+        /* Navigation */
+        .pages {
+            display: flex;
+            gap: 30px;
+        }
+
+        .pages a {
+            text-decoration: none;
+            color: white;
+            font-size: 16px;
+            transition: .3s;
+        }
+
+        .pages a:hover {
+            color: gold;
+        }
+
+        /* Right Side */
+        .last {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .join,
+        .language {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            color: white;
+            cursor: pointer;
+        }
+
+        .last p {
+            color: white;
+            cursor: pointer;
+        }
+
+        .last p:hover,
+        .join:hover,
+        .language:hover {
+            color: gold;
+        }
+
+        /* Sponsor */
+        .sponsor {
+            display: flex;
+            align-items: center;
+        }
+
+        .sponsor img {
+            height: 30px;
+            width: auto;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- Logo -->
+        <div class="first">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXMEm-2H1bl8M-TfFNtG7Ydb3PTTdC1-AKtsD-o_jgTg&s=10"
+                alt="Liverpool Logo">
+        </div>
+
+        <!-- Navigation -->
+        <div class="pages">
+            <a href="#">News</a>
+            <a href="#">Features & Teams</a>
+            <a href="#">Tickets & Booking</a>
+            <a href="#">Shop</a>
+            <a href="#">Video</a>
+            <a href="#">More</a>
+        </div>
+
+        <!-- Right -->
+        <div class="last">
+
+            <div class="join">
+                <i class="fa-solid fa-user-plus"></i>
+                <span>Join</span>
+            </div>
+
+            <p>Login</p>
+
+            <div class="language">
+                <i class="fa-solid fa-globe"></i>
+                <span>EN</span>
+            </div>
+
+            <div class="sponsor">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSk_e9EokltvIRsbopQhNcB-uHsWuXNMvDrB_7AGTL9fQ&s=10"
+                    alt="Sponsor Logo">
+            </div>
+           
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
